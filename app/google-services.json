@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "562061793297",
+    "project_id": "sweetchat-b8ead",
+    "storage_bucket": "sweetchat-b8ead.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:562061793297:android:0b21d9a51b2b342c85b9b0",
+        "android_client_info": {
+          "package_name": "com.example.sweetchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "562061793297-deoqqgk7si1ddva4cpngtpih0uv7442s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sweetchat",
+            "certificate_hash": "fa6c3505d6b2fab85875b41f331c186dd2a443ef"
+          }
+        },
+        {
+          "client_id": "562061793297-3jqip1jcl2saph98tt5ja8gg5lf87fe5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDntraI_Elc05IpV8WiVYFofGt5wV8LAHk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "562061793297-3jqip1jcl2saph98tt5ja8gg5lf87fe5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

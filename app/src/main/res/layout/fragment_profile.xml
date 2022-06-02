@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Profile">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgProfileImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/user"
+        app:civ_border_width="2dp"
+        android:layout_gravity="center"
+        app:civ_border_color="#FF000000"/>
+    <ImageView
+        android:id="@+id/imgAddProfileImage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/plus"
+        android:layout_gravity="center"
+        android:layout_marginTop="-20dp"
+        android:layout_marginStart="30dp" />
+    <TextView
+        android:id="@+id/txtProfileName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_your_name"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:padding="10dp"
+        app:drawableLeftCompat ="@drawable/ic_account"
+        android:layout_margin="10dp"
+        android:textColor="@color/colorPrimary"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/profile_name"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_your_name"
+        android:textColorHint="@color/colorPrimary"
+        app:boxStrokeColor="@color/colorPrimary"
+        android:layout_margin="10dp"
+        android:visibility="gone"
+        app:endIconTint="@color/colorPrimary"
+        app:startIconTint="@color/colorPrimary"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etProfileName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="text"
+            android:textColor="@color/colorPrimary"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:id="@+id/txtProfileEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        app:drawableLeftCompat ="@drawable/ic_email"
+        android:textColor="@color/colorPrimary"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/profile_email"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_email"
+        android:textColorHint="@color/colorPrimary"
+        app:boxStrokeColor="@color/colorPrimary"
+        app:endIconMode="clear_text"
+        android:layout_margin="10dp"
+        android:visibility="gone"
+        app:endIconTint="@color/colorPrimary"
+        app:startIconTint="@color/colorPrimary"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etProfileEmail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/colorPrimary"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:id="@+id/txtProfileStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_your_status"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:textColor="@color/colorPrimary"
+
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/profile_status"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_your_status"
+        android:textColorHint="@color/colorPrimary"
+        app:boxStrokeColor="@color/colorPrimary"
+        android:layout_margin="10dp"
+        android:visibility="gone"
+        app:endIconTint="@color/colorPrimary"
+        app:startIconTint="@color/colorPrimary"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etProfileStatus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="text"
+            android:textColor="@color/colorPrimary"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btUpdateProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:text="@string/update"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:background="@color/colorPrimary"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btSaveProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:text="@string/save"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:background="@color/color3"
+        />
+
+     <ProgressBar
+         android:id="@+id/profileProgressBar"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center"
+         android:visibility="gone"
+         />
+
+
+
+</LinearLayout>

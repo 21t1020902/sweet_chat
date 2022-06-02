@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="30dp"
+    android:background="@color/white"
+    tools:context=".Login">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/login_Email"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_email"
+                android:textColorHint="@color/colorPrimary"
+                app:boxStrokeColor="@color/colorPrimary"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/colorPrimary"
+                app:startIconTint="@color/colorPrimary"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etLoginEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/colorPrimary"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/login_Password"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_your_password"
+                android:textColorHint="@color/colorPrimary"
+                app:boxStrokeColor="@color/colorPrimary"
+                app:endIconMode="password_toggle"
+                android:layout_marginTop="20dp"
+                app:endIconTint="@color/colorPrimary"
+                app:startIconTint="@color/colorPrimary"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etLoginPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textPassword"
+                    android:textColor="@color/colorPrimary"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:text="@string/login"
+                android:background="@color/colorPrimary"
+                />
+              <androidx.appcompat.widget.AppCompatImageButton
+                  android:id="@+id/btGoogleLogin"
+                  android:layout_width="500dp"
+                  android:layout_height="100dp"
+                  android:layout_marginTop="10dp"
+                  android:src="@drawable/google"
+                  android:scaleType="fitCenter"
+                  android:background="@color/white"
+                  />
+                <RelativeLayout
+                    android:id="@+id/login_progress_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:elevation="10dp"
+                    android:padding="20dp"
+                    android:visibility="gone"
+                    >
+                    <ProgressBar
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerInParent="true"
+                        />
+                </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
